@@ -58,7 +58,7 @@ int cheie() {
         } else {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "INVALID INPUT. KEY MUST BE A NUMBER" << endl;
+            cout << "INVALID INPUT. KEY MUST BE A NUMBER!" << endl;
         }
     }
 }
