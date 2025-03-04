@@ -11,6 +11,39 @@ struct {
     int U,u=20;int V,v=21;int W,w=22;int X,x=23;int Y,y=24;int Z,z=25;
 }alfabet;   
 
+
+int cheie();
+char incript_litera(char ch, int key);
+char decript_litera(char ch, int key);
+string incriptie(string text, int key);
+string decriptie(string text, int key);
+
+
+int main() {
+    string text;
+    int alege;
+    int key;
+
+    cout << "Input text: \n";
+    getline(cin, text);
+
+    key = cheie();
+    
+    cout << "Choose an option \n1. Encryption \n2. Decryption \n";
+    cin >> alege;
+    
+    if (alege == 1) {
+        cout << "Encrypted text: " << '\n' << incriptie(text, key) << endl;
+    } else if (alege == 2) {
+        cout << "Decrypted text: " <<'\n' << decriptie(text, key) << endl;
+    } else {
+        cout << "INVALID" << endl;
+    }
+    
+    return 0;
+}
+
+
 int cheie() {
     int key;
     while (true) {
@@ -56,28 +89,4 @@ string decriptie(string text, int key) {
         ch = decript_litera(ch, key);
     }
     return text;
-}
-
-int main() {
-    string text;
-    int alege;
-    int key;
-
-    cout << "Input text: \n";
-    getline(cin, text);
-
-    key = cheie();
-    
-    cout << "Choose an option \n1. Encryption \n2. Decryption \n";
-    cin >> alege;
-    
-    if (alege == 1) {
-        cout << "Encrypted text: " << '\n' << incriptie(text, key) << endl;
-    } else if (alege == 2) {
-        cout << "Decrypted text: " <<'\n' << decriptie(text, key) << endl;
-    } else {
-        cout << "INVALID" << endl;
-    }
-    
-    return 0;
 }
