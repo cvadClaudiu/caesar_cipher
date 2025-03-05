@@ -1,0 +1,3 @@
+C:\AIA\0Proiecte\cifru_cezar\caesar_cipher\caesar_cipher\x64\Debug\caesar_cipher.vcxproj.AssemblyReference.cache
+C:\AIA\0Proiecte\cifru_cezar\caesar_cipher\caesar_cipher\x64\Debug\caesarcipher.c_cipher.resources
+C:\AIA\0Proiecte\cifru_cezar\caesar_cipher\caesar_cipher\x64\Debug\caesar_cipher.vcxproj.GenerateResource.cache
